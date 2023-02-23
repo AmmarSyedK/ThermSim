@@ -9,22 +9,30 @@ Display::Display(QObject *parent)
     materials = {"Steel", "Brass", "Aluminum"};
     // Heat treatments
     heatTreatments = {"Quenching", "Annealing"};
+    // Shape of the material
+    materialShape = {"Plate", "Bar", "Sheet", "Tube"};
     // Types available for each material
     m_steelTypes = {"Hypo-eutectoid", "Eutectoid", "Hyper-eutectoid"};
     m_brassTypes = {"Alpha", "Beta", "Gamma"};
     m_aluminumTypes = {"2000 series", "6000 series", "7000 series"};
 }
 
-QStringList Display::getArray(QStringList array)
+QStringList Display::getMaterials()
 {
-    // Return the list of available materials
-    return array;
+    // Return the list of available heat treatments
+    return materials;
 }
 
 QStringList Display::getHeatTreatments()
 {
     // Return the list of available heat treatments
     return heatTreatments;
+}
+
+QStringList Display::getMaterialShape()
+{
+    // Return the list of available heat treatments
+    return materialShape;
 }
 
 QStringList Display::getTypes(const QString &material)

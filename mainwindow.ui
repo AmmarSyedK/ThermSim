@@ -14,11 +14,11 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="simButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>390</y>
+      <x>60</x>
+      <y>440</y>
       <width>161</width>
       <height>71</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QComboBox" name="materialComboBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>160</y>
+      <x>60</x>
+      <y>70</y>
       <width>91</width>
       <height>24</height>
      </rect>
@@ -40,8 +40,8 @@
    <widget class="QComboBox" name="typeComboBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>240</y>
+      <x>60</x>
+      <y>130</y>
       <width>161</width>
       <height>24</height>
      </rect>
@@ -50,8 +50,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>120</y>
+      <x>60</x>
+      <y>40</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -63,8 +63,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>210</y>
+      <x>60</x>
+      <y>100</y>
       <width>151</width>
       <height>16</height>
      </rect>
@@ -76,8 +76,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>290</y>
+      <x>60</x>
+      <y>160</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -89,8 +89,8 @@
    <widget class="QComboBox" name="treatmentComboBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>320</y>
+      <x>60</x>
+      <y>190</y>
       <width>161</width>
       <height>24</height>
      </rect>
@@ -104,6 +104,133 @@
       <width>441</width>
       <height>341</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>230</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter temperature</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="shapeComboBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>330</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>300</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose the shape of your part</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>360</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dimensions of your part (lwh)</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="lengthDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>390</y>
+      <width>62</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>10000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="widthDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>390</y>
+      <width>62</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>10000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="heightDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>390</y>
+      <width>62</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>10000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="temperatureDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>260</y>
+      <width>91</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>99999999.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>230</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter time (min)</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="timeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>260</y>
+      <width>91</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>99999999.000000000000000</double>
     </property>
    </widget>
   </widget>

@@ -9,17 +9,18 @@ class Display : public QObject
 public:
     explicit Display(QObject *parent = nullptr);
 
+    QStringList getTypes(const QString &material);
     QStringList getMaterials();
     QStringList getHeatTreatments();
-    QStringList getTypes(const QString &material);
-    QStringList getArray(QStringList array);
+    QStringList getMaterialShape();
 
 private:
-    QStringList materials;
-    QStringList heatTreatments;
     QStringList m_steelTypes;
     QStringList m_brassTypes;
     QStringList m_aluminumTypes;
+    QStringList materials;
+    QStringList heatTreatments;
+    QStringList materialShape;
 };
 
 #endif // DISPLAY_H

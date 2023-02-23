@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     display.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    simulation.cpp
 
 HEADERS += \
     display.h \
-    mainwindow.h
+    mainwindow.h \
+    simulation.h
 
 FORMS += \
     mainwindow.ui

@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,12 +16,10 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void fillTypeComboBox(QString material);
+    void startSimulation();
+    // Afficher les données de simulation sur graphicsView
 
 private:
     Ui::MainWindow *ui;
-    QStringList materials = {"Steel", "Brass", "Aluminum"};
-    QStringList heatTreatments = {"Quenching", "Annealing"};
-    QStringList carbonTypes = {"Hypo-eutectoid", "Eutectoid", "Hyper-eutectoid"};
-
 };
 #endif // MAINWINDOW_H
